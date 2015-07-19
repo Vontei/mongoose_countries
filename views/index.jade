@@ -2,7 +2,6 @@ extends layout
 
 block content
   h1 Country List
-  p Basic information on countries.
   a(href='/new') Add a Country
   
   div 
@@ -21,3 +20,5 @@ block content
               img(src=country.flag, height='25' width='50')
             td= country.capital
             td= country.population
+            
+            

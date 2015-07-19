@@ -1,6 +1,5 @@
 extends layout 
 
-
 block content 
   a(href='/') Back
   h1 Add a country to the list.
@@ -13,4 +12,5 @@ block content
     input(type='text' name='capital' value=capital)
     label Population 
     input(type='number' name='population' value=population)
-    input(type='submit' name='submit' value='Update')
+    br
+    input(class='submit' type='submit' name='submit' value='Update')

@@ -6,12 +6,14 @@ block content
     p= warning
   h1 Add a country to the list.
   form(action='/new' method='post')
-    label Country name
-    input(type='text' name='name')
+    label Country name  
+    input.box(type='text' name='name')
     label flag
-    input(type='text' name='flagUrl')
+    input.box(type='text' name='flagUrl')
     label Capital 
-    input(type='text' name='capital')
+    input.box(type='text' name='capital')
     label Population 
-    input(type='number' name='population')
-    input(type='submit' name='submit' value='ADD')
+    input.box(type='number' name='population')
+    br
+
+    input(class='submit' type='submit' name='submit' value='ADD')
