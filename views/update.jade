@@ -1,0 +1,16 @@
+extends layout 
+
+
+block content 
+  a(href='/') Back
+  h1 Add a country to the list.
+  form(action='/show/'+id+'/update' method='post')
+    label Country name
+    input(type='text' name='name' value= name)
+    label flag
+    input(type='text' name='flagUrl' value=flag)
+    label Capital 
+    input(type='text' name='capital' value=capital)
+    label Population 
+    input(type='number' name='population' value=population)
+    input(type='submit' name='submit' value='Update')

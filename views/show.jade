@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  a(href='/') Back
+  h1 Country Information 
+      h3 #{name}
+      h3 #{capital}
+      h3 #{population}
+      p
+        img(src=flag height='50' width='100')
+        
+        
+  a(href='/show/' + id + '/update') Update Info
+  form(action='/show/'+id+'/delete' method='post')
+    input(type='submit' value='Delete')

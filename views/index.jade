@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 Country List
+  p Basic information on countries.
+  a(href='/new') Add a Country
+  
+  div 
+    if countries
+      table
+        thead
+          td Name 
+          td Flag 
+          td Capital 
+          td Population 
+        each country in countries
+          tr
+            td
+              a(href='/show/' + country._id)=country.name 
+            td
+              img(src=country.flag, height='25' width='50')
+            td= country.capital
+            td= country.population
